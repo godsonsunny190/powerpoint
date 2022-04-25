@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url("Graphik-Bold.woff2") format("woff2"), url("Graphik-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url("Graphik-BoldItalic.woff2") format("woff2"), url("Graphik-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+.grid {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: black;
+}
+
+.grid .position {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  top: 50%;
+  left: 50%;
+  bottom: -50%;
+  right: -50%;
+}
+
+.grid .position h1 {
+  color: red;
+  text-align: center;
+}
+
+.grid .position h2 {
+  text-shadow: none;
+}
+/*# sourceMappingURL=style.css.map */
