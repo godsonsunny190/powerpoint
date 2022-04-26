@@ -26,30 +26,37 @@ a {
   font-display: swap;
 }
 
-.grid {
+.card {
   position: relative;
   height: 100vh;
   width: 100%;
   background: black;
 }
 
-.grid .position {
+.card .card__description {
   position: absolute;
   width: 200px;
   height: 200px;
-  background-color: blue;
+  background-color: #008080;
   top: 50%;
   left: 50%;
-  bottom: -50%;
-  right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
-.grid .position h1 {
-  color: red;
-  text-align: center;
-}
-
-.grid .position h2 {
-  text-shadow: none;
-}
+/***** cards *****/
+/***** End cards *****/
 /*# sourceMappingURL=style.css.map */
