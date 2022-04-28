@@ -4,17 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PORFOLIO SASS</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <title>Sass Tutorials</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
-    <div class="card">
-      <div class="card__description">
-        <h1>Hellow world</h1>
+
+    <!-- Header of the page -->
+    <header class="header flex flex-jc-se flex-ai-c">
+      <div class="logo">
+        <a href=""class="header__logo">
+          <img src="./images/logo.svg" class="header__img" alt="">
+        </a>
       </div>
-      <div class="card__img">
-        <img src="" alt="" />
+
+      <nav class="header__navbar">
+        <ul class="header__nav__items flex jc-sb">
+          <li class="header__nav--list"><a class="header__nav--links" href="">Home</a></li>
+          <li class="header__nav--list"><a class="header__nav--links" href="">About</a></li>
+          <li class="header__nav--list"><a class="header__nav--links" href="">Contact</a></li>
+          <li class="header__nav--list"><a class="header__nav--links" href="">Blogs</a></li>
+          <li class="header__nav--list"><a class="header__nav--links" href="">Careeer</a></li>
+        </ul>
+      </nav>
+
+      <a href="" class="header__nav--btn">Request invite</a>
+    </header>
+  <!-- Header secton ends -->
+
+
+  <!-- Hero section stats -->
+  
+  <section class="hero">
+    <div class="container--pall flex">
+      <div class="hero__info">
+        <h1 class="hero__title">Next generation digital banking!!!!</h1>
+        <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more. </p>
+      </div>
+      <div class="hero__img">
+        <img src="./images/bg-intro-desktop.svg" alt="">
       </div>
     </div>
+
+  </section>
+
+
+
+
+
+
+
   </body>
 </html>

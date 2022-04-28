@@ -1,0 +1,57 @@
+@import'./variables';
+@import'./globel';
+@import'./mixins';
+
+
+/* Header section style starts*/
+
+.header{
+    height: 85px;
+    position: relative;
+    z-index: 999;
+    background-color:$white;
+
+    &__nav--list{
+        padding: 0 16px;
+    }
+
+    &__nav--links{
+         color: $grayishBlue;
+    }
+
+    &__nav--btn{
+        padding: 0.875rem 2.1875rem;
+        border-radius: 50px;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 15px;
+        color: white;
+        background-image: linear-gradient(to right, #31d35c, #2bb7da);
+    }
+}
+
+/* Header section style  Ends*/
+
+/* Hero section style  Starts*/
+
+.hero{
+    position: relative;
+
+    &__info{
+        width: 50%;
+    }
+
+    &__title{
+        font-size: 40px;
+    }
+    
+    &__img{
+        width: 50%;
+        
+        img{
+            position: absolute;
+        }
+    }
+}
+
+/* Hero section style  Ends*/
