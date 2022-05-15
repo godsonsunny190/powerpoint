@@ -5,65 +5,308 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sass Tutorials</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
+    <!-- header section stars -->
 
-    <!-- Header of the page -->
-    <header class="header flex flex-jc-se flex-ai-c">
-      <div class="logo">
-        <a href=""class="header__logo">
-          <img src="./images/logo.svg" class="header__img" alt="">
-        </a>
+    <header class="header">
+      <div class="header__logo">
+        <h4 class="header__logo--title">
+          <img src="./images/photo-slideshow.png" alt="logo" />Highpro
+        </h4>
       </div>
-
-      <nav class="header__navbar">
-        <ul class="header__nav__items flex jc-sb">
-          <li class="header__nav--list"><a class="header__nav--links" href="">Home</a></li>
-          <li class="header__nav--list"><a class="header__nav--links" href="">About</a></li>
-          <li class="header__nav--list"><a class="header__nav--links" href="">Contact</a></li>
-          <li class="header__nav--list"><a class="header__nav--links" href="">Blogs</a></li>
-          <li class="header__nav--list"><a class="header__nav--links" href="">Careeer</a></li>
-        </ul>
-      </nav>
-
-      <a href="" class="header__nav--btn">Request invite</a>
+      <div class="header__icons">
+        <a href="" class="header__icons--cta">Login</a>
+        <i class="bx bx-search"></i>
+        <i class="bx bx-menu"></i>
+      </div>
     </header>
-  <!-- Header secton ends -->
+    <!-- header section end -->
+    <!-- hero section starts -->
+    <section class="hero">
+      <div class="hero__container flex__js--c">
+        <div class="hero__info">
+          <h1 class="hero__title">Powerpoint</h1>
+          <h4 class="hero__subtitle">Infomation On Demand</h4>
+          <p class="hero__desc">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots <br />
+            in a piece of classical Latin literature
+          </p>
+          <a href="" class="hero__cta">Contact us</a>
+        </div>
 
+        <div class="hero__img">
+          <img src="./images/bg-2.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- hero section ends -->
 
-  <!-- Hero section stats -->
-  
-  <section class="hero">
-    <div class="container--pall flex">
-      <div class="hero__info">
-        <h1 class="hero__title">Next generation digital banking!!!!</h1>
-        <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more. </p>
+    <!-- main section stars -->
+    <!-- services section stars -->
+    <main>
+      <section class="services container container--pall">
+        <h4 class="section__title">Our services</h4>
+        <div class="services__list">
+
+          <div class="services__list--one">
+            <img src="./images/folder.png" alt="" />
+            <h4 class="services__list--subtitle">Storege</h4>
+            <p class="services__list--desc">
+              simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard
+            </p>
+          </div>
+
+          <div class="services__list--one">
+            <img src="./images/analytics.png" alt="" />
+            <h4 class="services__list--subtitle">Analytics</h4>
+            <p class="services__list--desc">
+              simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard
+            </p>
+          </div>
+
+          <div class="services__list--one">
+            <img src="images/key.png" alt="" />
+            <h4 class="services__list--subtitle">Security</h4>
+            <p class="services__list--desc">
+              simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard
+            </p>
+          </div>
+        </div>
+
+        <div class="services__readmore flex__js--c">
+           <a href="" class="services__cta">Read more</a>
+        </div>
+      </section>
+
+    <!-- services section ends -->
+
+   <!-- Features section stars -->
+   <section id="features" class="container">
+     <div class="features flex__js--sb flex__al--x">
+       <div class="features__img">
+         <img src="./images/Layer 10.png" alt="">
+       </div>
+       <div class="features__info">
+         <h4 class="features__info--title">Outstanding Features</h2>
+         <p class="features__desc">simply dummy text of the printing and typesetting industry and also <br> Lorem Ipsum has  been the industry's  simply dummy text of the  printing <br>and typesetting industry.  Lorem Ipsum has been the industry's standard  <br>Lorem Ipsum has  been the industry's  simply dummy text of the  printing </p>
+       </div>
+     </div>
+   </section>
+
+   <!-- Features section ends -->
+
+   <!-- blog section starts -->
+
+   <section class="container--pall container">
+     <div class="blogs">
+       <div class="section__title">
+         <h4>Latest From The Blog</h4>
+       </div>
+       <div class="blogs__boxs">
+         <div class="blogs__boxs--one">
+            <div class="blogs__img">
+              <img src="./images/Layer 7.png" alt="">
+            </div>
+            <div class="blogs__info">
+              <h4 class="blogs__info--title">tempor incididunt ut labore</h4>
+              <p class="blogs__boxs--desc">Lorem ipsum dolor sit amet, conadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis<p>
+            </div>
+            
+         </div>
+
+         <div class="blogs__boxs--one">
+            <div class="blogs__img">
+              <img src="./images/Layer 8.png" alt="">
+            </div>
+            <div class="blogs__info">
+              <h4 class="blogs__info--title">tempor incididunt ut labore</h4>
+              <p class="blogs__boxs--desc">Lorem ipsum dolor sit amet, conadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis<p>
+            </div>
+         </div>
+
+         <div class="blogs__boxs--one">
+             <div class="blogs__img">
+              <img src="./images/Layer 9.png" alt="">
+            </div>
+            <div class="blogs__info">
+              <h4 class="blogs__info--title">tempor incididunt ut labore</h4>
+              <p class="blogs__boxs--desc">Lorem ipsum dolor sit amet, conadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis<p>
+            </div>
+         </div>
+
+       </div>
+     </div>
+   </section>
+
+   <!-- blog section ends -->
+
+  <!-- Team section stars -->
+
+  <section class="team container--pall">
+    <div class="team__slider--left"><i class='bx bx-chevron-left'></i></div>
+    <div class="team__slider--right"><i class='bx bx-chevron-right'></i></div>
+    <h4 class="section__title">Our Team</h4>
+      <div class="team__boxs flex__js--c swiper">
+        <div class="team__info">
+          <img src="./images/china-1294377 copy 2.png" alt="">
+            <div class="team__name">
+             <h4 class="team__name--roduk">Roduk</h4>
+            <span class="team__name--subname">(CEO)</span>
+         </div>
+        </div>
+       
+
+        <div class="team__info">
+          <img src="./images/china-1294377 copy 2.png" alt="">
+            <div class="team__name">
+              <h4 class="team__name--roduk">Roduk</h4>
+              <span class="team__name--subname">(CEO)</span>
+            </div>
+          </div>
+
+        <div class="team__info">
+          <img src="./images/china-1294377 copy 2.png" alt="">
+           <div class="team__name">
+            <h4 class="team__name--roduk">Roduk</h4>
+            <span class="team__name--subname">(CEO)</span>
+          </div>
+        </div>
       </div>
-      <div class="hero__img">
-        <img src="./images/bg-intro-desktop.svg" alt="">
-      </div>
-    </div>
 
   </section>
 
+  <!-- Team section ends -->
+
+ <!-- Testimony section starts -->
+  <section class="testimonial container container--pall">
+    <h4 class="section__title">Testimonial</h4>
+     <div class="testimonial__about flex">
+      <div class="testimonial__boxs ">
+        <p class="testimonial__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+         sed do eiusmod tempor incididunt sed do eiusmod tempor incididunt</p>
+         <div class="testimonial__icons">
+          <img src="./images/technician copy.png" alt="">
+         </div>
+          <div class="testimonial__names">
+          <h4>John</h4>
+          <h4 class="testimonial__client">Client</h4>   
+        </div>
+      </div>
+      
+
+       <div class="testimonial__boxs ">
+        <p class="testimonial__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+         sed do eiusmod tempor incididuntsed do eiusmod tempor incididunt </p>
+         <div class="testimonial__icons flex__js--c">
+          <img src="./images/technician copy.png" alt="">
+         </div>
+            <div class="testimonial__names">
+          <h4>John</h4>
+          <h4 class="testimonial__client">Client</h4>   
+        </div>
+      </div>
+
+       <div class="testimonial__boxs">
+        <p class="testimonial__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+         sed do eiusmod tempor incididunt sed do eiusmod tempor incididunt</p>
+          <div class="testimonial__icons">
+          <img src="./images/technician copy.png" alt="">
+         </div>
+            <div class="testimonial__names flex">
+          <h4>John</h4>
+          <h4 class="testimonial__client">Client</h4>   
+        </div>
+      </div>
+    </div>
+    
+    <div class="team__pagination">
+      <span></span>
+      <span></span>
+      <span class="circle"></span>
+      <span></span>
+    </div>
+  </section>
+
+ <!-- Testimony section Ends -->
+
+ <!-- map section starts -->
+<section class=" container--pall">
+<div class="address flex__js--sb">
+  <div class="address__contact">
+    <h4 class="section__title">Contact Us</h4>
+      <form action="">
+        <input type="name" class="input__field" placeholder="Your Name">
+        <br>
+        <input type="name" class="input__field"  placeholder="Your Email">
+        <br>
+        <input type="name" class="input__field"  placeholder="Your Mobile">
+        <br>
+        <input type="name" class="input__field"  placeholder="Your Message">
+
+      <div class="address__cta"> 
+        <a href="">Send</a>
+      </div>
+     </form>
+
+     
+   </div>
+   
+    <div class="map">
+      <img src="./images/Layer 11.png" alt="">
+    </div>
+  </div>
+ </section>
+
+ <!-- map section ends -->
+ </main>
+  <!-- main section ends -->
 
 
+  <footer>
+    <div class="footer container">
+      <div class="footer__links">
+        <h4 class="footer__links--title">Useful links</h4>
+        <p class="footer__links--desc">It is a long established fact that a reader will <br> be distracted by the 
+        readable content of a <br> page when looking at its layout. The point of <br> using
+        Lorem Ipsum is that it has a <br> more-or-less normal distribution of letters, </p>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__links--title">Find us </h4>
+        <ul>
+          <li><i class='bx bx-location-plus'></i>wwww.companyname.com</li>
+          <li><i class='bx bx-phone'></i> (+71) 1234567890</li>
+          <li><i class='bx bx-envelope'></i>Youremail@gmail.com</li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__links--title">News letter</h4>
+        <input type="text">
+      </div>
+    </div>
+  </footer>
+
+   <div class="powerdby">
+    <p>© 2021 All Rights Reserved. Design by Free html Templates</p>
+  </div>
 
 
-
-
+  <script src="./javascript/script.js"></script>
   </body>
 </html>
+
